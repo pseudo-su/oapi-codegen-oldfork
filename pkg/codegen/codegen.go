@@ -26,7 +26,7 @@ import (
 	"github.com/getkin/kin-openapi/openapi3"
 	"github.com/pkg/errors"
 
-	"github.com/deepmap/oapi-codegen/pkg/codegen/templates"
+	"github.com/pseudo-su/oapi-codegen/pkg/codegen/templates"
 )
 
 // Options defines the optional code to generate.
@@ -144,7 +144,7 @@ func Generate(swagger *openapi3.Swagger, packageName string, opts Options) (stri
 			imports = append(imports, "context")
 		}
 		if strings.Contains(str, "runtime.") {
-			imports = append(imports, "github.com/deepmap/oapi-codegen/pkg/runtime")
+			imports = append(imports, "github.com/pseudo-su/oapi-codegen/pkg/runtime")
 		}
 		if strings.Contains(str, "bytes.") {
 			imports = append(imports, "bytes")
