@@ -8,9 +8,9 @@ import (
 	"compress/gzip"
 	"encoding/base64"
 	"fmt"
-	"github.com/pseudo-su/oapi-codegen/pkg/runtime"
 	"github.com/getkin/kin-openapi/openapi3"
 	"github.com/labstack/echo/v4"
+	"github.com/pseudo-su/oapi-codegen/pkg/runtime"
 	"net/http"
 	"strings"
 )
